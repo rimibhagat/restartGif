@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="../js-library/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="custom.js"></script>
+    <style>
+        .product-static {
+            position: absolute;
+            z-index: 10;
+            transition: opacity 1s ease-in-out;
+            max-width: 100% !important;
+        }
+
+        .product-static img {
+            display: inline-block;
+        }
+
+        .product-gif.show-animation {
+            z-index: 9;
+            opacity: 1;
+            position: relative;
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gifhover-block">
+        <b>Hover On the Image to show GIF image starting from Begining.</b><br /><br />
+        <div class="inner-wrap">
+            <div class="product-static show-animation" id="animate" data-filename="cutdown.gif" data_gif_played="true"
+                style="opacity: 1;">
+                <div class="candy-gallery"><img src="static.jpg"
+                        alt="Animated sketch of the Pink Sapphire Ring with Rubies and Diamonds"></div>
+            </div>
+            <div class="product-gif show-animation animate"><img src=""
+                    alt="Animated sketch of the Pink Sapphire Ring with Rubies and Diamonds"></div>
+        </div>
+    </div>
+</body>
+
+</html>
